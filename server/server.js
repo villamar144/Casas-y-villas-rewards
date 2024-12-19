@@ -19,7 +19,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'https://casas-y-villas-rewards.onrender.com', // Reemplaza con tu URL de Netlify
+    origin: 'https://preeminent-sprite-28075a.netlify.app/', // Reemplaza con tu URL de Netlify
   }));
 
 // MongoDB Atlas Connection
