@@ -6,10 +6,6 @@ require('dotenv').config();
 
 //const userRoutes = require('./routes/userRoutes');
 
-app.use(cors({
-    origin: 'https://casas-y-villas-rewards.onrender.com', // Reemplaza con tu URL de Netlify
-  }));
-
 
 //const app = express();
 //app.use(cors());
@@ -22,8 +18,9 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+    origin: 'https://casas-y-villas-rewards.onrender.com', // Reemplaza con tu URL de Netlify
+  }));
 
 // MongoDB Atlas Connection
 const uri = process.env.MONGODB_URI; // Asegúrate de que esté configurado en tu .env
